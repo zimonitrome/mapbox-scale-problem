@@ -6,3 +6,5 @@ To run:
 npm install
 npm run dev
 ```
+
+Or visit the GH page: https://zimonitrome.github.io/mapbox-scale-problem/
