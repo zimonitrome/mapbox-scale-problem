@@ -2,7 +2,7 @@ import { ParentComponent, createEffect, createSignal, onMount } from "solid-js";
 import mapboxgl, { LngLat, Marker } from "mapbox-gl";
 import { calculateDistScale } from "./helpers";
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { projection, scalingEnabled } from "./App";
+import { projection, scalingEnabled } from "./ScaleExample";
 
 let mapElement: HTMLDivElement | undefined = undefined;
 

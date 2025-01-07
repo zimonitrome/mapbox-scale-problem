@@ -7,7 +7,7 @@ export const [scalingEnabled, setScalingEnabled] = createSignal(true);
 export const [projection, setProjection] = createSignal<"globe" | "mercator">("globe");
 
 
-const App: Component = () => {
+const ScaleExample: Component = () => {
   return (
     <div style={{
       "background-color": 'lightgrey',
@@ -56,4 +56,4 @@ const App: Component = () => {
   );
 };
 
-export default App;
+export default ScaleExample;

@@ -1,14 +1,25 @@
-/* @refresh reload */
-import { render } from 'solid-js/web';
+import { render } from "solid-js/web";
+import { Router, Route, A } from "@solidjs/router";
 
-import App from './App';
+import ScaleExample from "./pages/ScaleExample";
+import SymbolScaleExample from "./pages/SymbolScaleExample";
 
-const root = document.getElementById('root');
+const App = (props: any) => (
+  <>
+    <nav style={{ display: "flex", "flex-direction": "column" }}>
+      <A href="/mapbox-scale-problem/">ScaleExample</A>
+      <A href="/mapbox-scale-problem/SymbolScaleExample">SymbolScaleExample</A>
+    </nav>
+    {props.children}
+  </>
+);
 
-if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
-  throw new Error(
-    'Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got misspelled?',
-  );
-}
-
-render(() => <App />, root!);
+render(
+  () => (
+    <Router root={App}>
+      <Route path="/mapbox-scale-problem/" component={ScaleExample} />
+      <Route path="/mapbox-scale-problem/SymbolScaleExample" component={SymbolScaleExample} />
+    </Router>
+  ),
+  document.getElementById("root")!
+);
