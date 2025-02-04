@@ -11,14 +11,20 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/mapbox-gl": "^3.1.0",
+    "@types/node": "^22.10.5",
     "typescript": "^5.7.2",
     "vite": "^5.3.3",
+    "vite-plugin-node-polyfills": "^0.23.0",
     "vite-plugin-solid": "^2.11.0"
   },
   "dependencies": {
+    "@bettercorp/svg-to-geojson": "^1.0.1",
     "@solidjs/router": "^0.15.2",
-    "mapbox-gl": "^3.5.1",
-    "solid-js": "^1.8.18"
+    "@types/potrace": "^2.1.5",
+    "events": "^3.3.0",
+    "mapbox-gl": "^3.9.4",
+    "potrace": "^2.1.8",
+    "solid-js": "^1.8.18",
+    "svg2geojson": "^0.7.1"
   }
 }
